@@ -21,3 +21,5 @@ We are going to use different technologies such as Python, Amazon Web Services (
 You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline)
 Here is the dataset used in the project - https://github.com/NouhaylaChataoui/Stock-Market-Kafka-Real-Time-Data-Analysis/blob/main/indexProcessed.csv
 
+## Conclusion
+This project demonstrates the power of combining Apache Kafka with AWS services to build a scalable and real-time data processing pipeline. By leveraging cloud infrastructure, it becomes easier to manage, process, and analyze large datasets with minimal overhead.
