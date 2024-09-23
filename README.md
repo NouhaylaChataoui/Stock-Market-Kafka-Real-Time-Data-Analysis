@@ -10,11 +10,11 @@ We are going to use different technologies such as Python, Amazon Web Services (
 ## Technology Used
 - Programming Language - Python
 - Amazon Web Service (AWS)
-      1- S3 (Simple Storage Service)
-      2- Athena
-      3- Glue Crawler
-      4- Glue Catalog
-      5- EC2
+  1- S3 (Simple Storage Service)
+  2- Athena
+  3- Glue Crawler
+  4- Glue Catalog
+  5- EC2
 - Apache Kafka
 
 ## Dataset Used
