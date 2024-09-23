@@ -8,14 +8,15 @@ We are going to use different technologies such as Python, Amazon Web Services (
 ![Architecture](https://github.com/user-attachments/assets/33201e71-867d-4ec3-a2aa-43a7285aff71)
 
 ## Technology Used
-## **Python**: Stock market data simulation and stream processing.
-Amazon Web Services (AWS): Infrastructure for data storage and processing.
-    Amazon EC2: Hosting Kafka producer and consumer.
-    Amazon S3: Data lake storage for stock market data.
-    AWS Glue: Data cataloging and ETL processing.
-    Amazon Athena: SQL querying of real-time stock market data.
-Apache Kafka: Real-time streaming of stock market data.
-    
+- **Python**: Stock market data simulation and stream processing.
+- **Amazon Web Services (AWS)**: Infrastructure for data storage and processing.
+  - **Amazon EC2**: Hosting Kafka producer and consumer.
+  - **Amazon S3**: Data lake storage for stock market data.
+  - **AWS Glue**: Data cataloging and ETL processing.
+  - **Amazon Athena**: SQL querying of real-time stock market data.
+
+- **Apache Kafka**: Real-time streaming of stock market data.
+
 
 
 - Programming Language - Python
