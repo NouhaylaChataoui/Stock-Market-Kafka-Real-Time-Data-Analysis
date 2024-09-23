@@ -17,6 +17,14 @@ We are going to use different technologies such as Python, Amazon Web Services (
   - EC2
 - Apache Kafka
 
+## Prerequisites
+To run this project, you'll need:
+
+    An AWS account with permissions for EC2, S3, Glue, and Athena.
+    Python 3.x installed locally.
+    Apache Kafka and Zookeeper installed on EC2 instances.
+    Basic knowledge of Kafka, AWS services, and SQL.
+    
 ## Dataset Used
 You can use any dataset, we are mainly interested in operation side of Data Engineering (building data pipeline)
 Here is the dataset used in the project - https://github.com/NouhaylaChataoui/Stock-Market-Kafka-Real-Time-Data-Analysis/blob/main/indexProcessed.csv
