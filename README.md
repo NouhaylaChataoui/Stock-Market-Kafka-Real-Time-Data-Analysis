@@ -16,18 +16,7 @@ We are going to use different technologies such as Python, Amazon Web Services (
   - **Amazon Athena**: SQL querying of real-time stock market data.
 
 - **Apache Kafka**: Real-time streaming of stock market data.
-
-
-
-- Programming Language - Python
-- Amazon Web Service (AWS)
-  - S3 (Simple Storage Service)
-  - Athena
-  - Glue Crawler
-  - Glue Catalog
-  - EC2
-- Apache Kafka
-
+  
 ## Prerequisites
 To run this project, you'll need:
 
