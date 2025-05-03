@@ -30,3 +30,39 @@ Here is the dataset used in the project - https://github.com/NouhaylaChataoui/St
 
 ## Conclusion
 This project demonstrates the power of combining Apache Kafka with AWS services to build a scalable and real-time data processing pipeline. By leveraging cloud infrastructure, it becomes easier to manage, process, and analyze large datasets with minimal overhead.
+
+
+
+flowchart TB
+  %% Définition des styles
+  classDef preprocess fill:#F9E79F,stroke:#333,stroke-width:1px;
+  classDef model      fill:#AED6F1,stroke:#333,stroke-width:1px;
+  classDef ddpg       fill:#ABEBC6,stroke:#333,stroke-width:1px;
+  classDef output     fill:#F5B7B1,stroke:#333,stroke-width:1px;
+
+  %% Noeuds
+  Start([Start])
+  A[Libraries & seeds<br/>(os, random, torch…)]:::preprocess
+  B[Charger le dataset<br/>df]:::preprocess
+  C[Train/Test split<br/>(80 % / 20 %)]:::preprocess
+  D[MinMax Scaling<br/>(X & y)]:::preprocess
+  E[Création des séquences<br/>(seq_len = 24)]:::preprocess
+
+  F[Définir la classe GRUNet]:::model
+  G[Définir LoadForecastEnv]:::model
+  H[Vectoriser env & seed<br/>(DummyVecEnv)]:::model
+
+  I[Init DDPG agent & learn<br/>(1 000 steps)]:::ddpg
+  J[Recherche des meilleurs HP<br/>(50 itérations)]:::ddpg
+
+  K[Entraînement final du GRU<br/>(200 epochs)]:::model
+
+  L[Évaluation sur test<br/>MAE, RMSE, MAPE]:::output
+  M[Plot 1re semaine<br/>Réel vs Prédiction]:::output
+  End([End])
+
+  %% Flèches
+  Start --> A --> B --> C --> D --> E
+  E --> F --> G --> H --> I --> J
+  J --> K --> L --> M --> End
+
